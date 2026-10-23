@@ -3,14 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sticker Shop Title</title>
     <style>
         body {
-            background-color: rgba(100, 100, 100, 0.75);
+            min-width: 100vw;
+            min-height: 100vh;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8g1agtDNsJXrPWgQPTJV8OY6bC2lo1G9s_9oedw7qrQ&s=10);
+            background-repeat: norepeat;                    /* Ensures img doesn't repeat as user scrolls */
+            background-position: center;                    /* Centers img */
+            background-size: cover;                         /* Scales img to cover screen */
+            background-attachment: fixed;                   /* Keeps the background fixed while user scrolls */
+            overflow-x: hidden;                             /* Hides the x-axis or horizontal scrollbar */
+            overflow-y: scroll;                             /* Keeps the y-axis or vertical scrollbar */
+        }
+        #title_box {
+            width: 50vw;
+            height: 50vh;
+            background-color: rgba(255, 255, 255, 0.75);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            font-size: 3rem;
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 20px;
+        }
+        #delve_button {
+            /* Link to another page */
         }
     </style>
 </head>
 <body>
-    <p>Bryan Takamatsu</p>
+    <div id="title_box">
+        <h1> The Sticker Printer </h1>
+    </div>
+    <div id="delve_button">
+        <h3> Delve Deep Into Our Store </h3>
+    </div>
+    <div id="print_button">
+        <h3> Print Your Own Stickers </h3>
+    </div>
 </body>
 </html>
