@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Shop Title</title>
+    <style>
+        @keyframes transition {
+            100% {
+                transform: translate(-50%, -600px);
+            }
+        }
+        body {
+            min-width: 100vw;
+            min-height: 100vh;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/825/815/706/hoonigan-ken-block-collage-artwork-sticker-bomb-hd-wallpaper-preview.jpg);
+            background-repeat: norepeat;                    /* Ensures img doesn't repeat as user scrolls */
+            background-position: center;                    /* Centers img */
+            background-size: cover;                         /* Scales img to cover screen */
+            background-attachment: fixed;                   /* Keeps the background fixed while user scrolls */
+            overflow-x: hidden;                             /* Hides the x-axis or horizontal scrollbar */
+            overflow-y: scroll;                             /* Keeps the y-axis or vertical scrollbar */
+        }
+        #old_container {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            /*animation-name: transition;
+            animation-delay: 0.25s;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;*/
+        }
+        #old_title_box {
+            width: 50vw;
+            height: 50vh;
+            background-color: rgba(255, 255, 255, 0.75);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            font-size: 3rem;
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 50px;
+        }
+        #old_delve_link {
+            background-color: rgba(255, 255, 255, 0.75);
+            text-align: center;
+            height: 75px;
+            width: 350px;
+            font-size: 1.5rem;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50px;
+        }
+        #old_print_link {
+            background-color: rgba(255, 255, 255, 0.75);
+            text-align: center;
+            height: 50px;
+            width: 300px;
+            font-size: 1rem;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50px;
+        }
+        #old_disclaimer_link {
+            width: 200px;
+            height: 25px;
+            font-size: 0.25rem;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            transform: translate(-50%, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="old_container">
+        <a href="https://www.google.com" id="old_delve_link" class="transition">
+            <div id="old_delve_div">
+                <p>
+                    Delve Deep Into Our Store
+                </p>
+            </div>
+        </a>
+        <div id="old_title_box" class="transition">
+            <h1> The Sticker Printer </h1>
+        </div>
+        <a href="https://www.google.com" id="old_print_link">
+            <div id="old_print_div">
+                <p>
+                    Print Your Own Sticker
+                </p>
+            </div>
+        </a>
+    </div>
+    <a href="https://www.google.com" id="old_disclaimer_link" class="transition">
+        <div id="old_disclaimer_div">
+            <p>
+                This is a FAKE Business and we will NOT distribute displayed products.
+            </p>
+        </div>
+    </a>
+</body>
+</html>
