@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Access</title>
+    <script src="payment_screen.js"></script>
+    <style>
+        @keyframes appear {
+            100% {
+                opacity: 100%;
+            }
+        }
+        body {
+            min-width: 100vw;
+            min-height: 100vh;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/825/815/706/hoonigan-ken-block-collage-artwork-sticker-bomb-hd-wallpaper-preview.jpg);
+            background-repeat: norepeat;                    /* Ensures img doesn't repeat as user scrolls */
+            background-position: center;                    /* Centers img */
+            background-size: cover;                         /* Scales img to cover screen */
+            background-attachment: fixed;                   /* Keeps the background fixed while user scrolls */
+            overflow: hidden;
+        }
+        #container_white {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .card {
+            position: absolute;
+            width: 30rem;
+            height: 15rem;
+            border-radius: 2rem;
+            opacity: 0;
+            animation-name: appear;
+            animation-delay: 0.25s;
+            animation-fill-mode: forwards;
+            animation-duration: 0.5s;
+        }
+        .card_text {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: monospace;
+            color: white;
+        }
+        #credit_card {
+            background-color: purple;
+            top: 30%;
+            left: 15%;
+            transform: rotate(-30deg);
+        }
+        #debit_card {
+            background-color:blueviolet;
+            top: 30%;
+            left: 35%;
+            transform: rotate(-30deg);
+        }
+        #rewards_points {
+            background-color: blue;
+            top: 30%;
+            left: 55%;
+            transform: rotate(-30deg);
+        }
+        .card:hover {
+            width: 35rem;
+            height: 17.5rem;
+        }
+        #home_button1 {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            transform: translate(-150%, -100%);
+        }
+        #image {
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container_white">
+        <a href="cc.html">
+            <div id="credit_card" class="card">
+                <p id="cc_text" class="card_text">Credit Card</p>
+            </div>
+        </a>
+        <a href="dc.html">
+            <div id="debit_card" class="card">
+                <p id="dc_text" class="card_text">Debit Card</p>
+            </div>
+        </a>
+        <a href="rp.html">
+            <div id="rewards_points" class="card">
+                <p id="rp_text" class="card_text">Reward Points</p>
+            </div>
+        </a>
+        <a href="index.htlml">
+            <div id="home_button1">
+                <img src="house_button.png" id="image">
+            </div>
+        </a>
+    </div>
+</body>
+</html>
