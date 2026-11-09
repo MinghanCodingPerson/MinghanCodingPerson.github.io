@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Store</title>
     <style>
         body {
             min-width: 100vw;
@@ -40,37 +40,45 @@
             position: absolute;
             display: flex;
             flex-direction: row;
-            flex: 1;
-            flex-wrap: wrap;
+            flex-wrap: wrap;                    /*Wraps the flexboxes to another row when one is filled. Must establish max and min growth as well as base properties*/
             top: 20%;
-            left: 10%;
-            width: 50rem;
-            height: 20rem;
-            padding: 2rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 62.5rem;
+            height: 25rem;
+            padding: 2.5rem;
+            align-content: center;
+            row-gap: 2.5rem;
         }
         .linked_containers {
             position: relative;
             display: flex;
             flex-direction: column;
-            flex: 1;
-            width: 3rem;
-            height: 4.5rem;
+            flex-grow: 1;                               /*Establishes Max Growth for all the boxes*/
+            flex-shrink: 0;                             /*Establishes Minimum Growth for all the boxes (which is zero so they don't auto shrink)*/
+            flex-basis: 11.25rem;                       /*Establihes Base values for all boxes*/
+            width: 7.5rem;
+            height: 11.25rem;
+            background-color: red;
+            margin: 0;
+            align-items: center;
         }
         .image {
             background-color: blue;
-            width: 6rem;
-            height: 6rem;
+            width: 7.5rem;
+            height: 7.5rem;
+            overflow: hidden;
         }
         .desc {
             background-color: green;
-            width: 6rem;
-            height: 4rem;
+            width: 7.5rem;
+            height: 3.75rem;
         }
     </style>
 </head>
 <body>
     <div id="store_container">
-        <a href="#" class="linked_containers" id="vocaloid_stickers">
+        <a href="vocaloid_stickers.html" class="linked_containers" id="vocaloid_stickers">
             <div id="vocaloid_image" class="image">
 
             </div>
@@ -78,7 +86,7 @@
 
             </div>
         </a>
-        <a href="#" class="linked_containers" id="car_stickers">
+        <a href="car_stickers.html" class="linked_containers" id="car_stickers">
             <div id="car_image" class="image">
 
             </div>
@@ -86,7 +94,7 @@
                 
             </div>
         </a>
-        <a href="#" class="linked_containers" id="food_stickers">
+        <a href="food_stickers.html" class="linked_containers" id="food_stickers">
             <div id="food_image" class="image">
 
             </div>
@@ -94,13 +102,61 @@
                 
             </div>
         </a>
-        <a href="#" class="linked_containers" id="emoji_stickers">
+        <a href="emoji_stickers.html" class="linked_containers" id="emoji_stickers">
             <div id="emoji_image" class="image">
 
             </div>
             <div id="emoji_desc" class="desc">
                 
             </div>
+        </a>
+        <a href="sanrio_stickers.html" class="linked_containers" id="sanrio_stickers">
+            <div id="sanrio_image" class="image">
+
+            </div>
+            <div id="sanrio_desc" class="desc">
+                
+            </div>
+        <a href="meme_stickers.html" class="linked_containers" id="meme_stickers">
+            <div id="meme_image" class="image">
+
+            </div>
+            <div id="meme_desc" class="desc">
+                
+            </div>
+        </a>
+        <a href="#" class="linked_containers" id="sanrio_stickers">
+            <div id="sanrio_image" class="image">
+
+            </div>
+            <div id="sanrio_desc" class="desc">
+                
+            </div>
+        </a>
+        <a href="#" class="linked_containers" id="sanrio_stickers">
+            <div id="sanrio_image" class="image">
+
+            </div>
+            <div id="sanrio_desc" class="desc">
+                
+            </div>
+        </a>
+        <a href="#" class="linked_containers" id="sanrio_stickers">
+            <div id="sanrio_image" class="image">
+
+            </div>
+            <div id="sanrio_desc" class="desc">
+                
+            </div>
+        </a>
+        <a href="#" class="linked_containers" id="sanrio_stickers">
+            <div id="sanrio_image" class="image">
+
+            </div>
+            <div id="sanrio_desc" class="desc">
+                
+            </div>
+        </a>
         </a>
     </div>
     <div id="navbar" class="nav_offset">
