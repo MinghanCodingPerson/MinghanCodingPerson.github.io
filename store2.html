@@ -59,102 +59,117 @@
             flex-basis: 11.25rem;                       /*Establihes Base values for all boxes*/
             width: 7.5rem;
             height: 11.25rem;
-            background-color: red;
+            /*background-color: red; */
             margin: 0;
             align-items: center;
         }
         .image {
-            background-color: blue;
+            /*background-color: blue; */
             width: 7.5rem;
             height: 7.5rem;
             overflow: hidden;
         }
         .desc {
-            background-color: green;
+           /*background-color: green; */
             width: 7.5rem;
             height: 3.75rem;
+            display: flex;
+            font-size: 1.5rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: black;
+            align-items: center;
+            justify-content: center;
         }
+        #miku {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            scale: 0.25;
+        }
+        a {
+            text-decoration: underline;
+            text-decoration-color: transparent;
+        } /*Removes the underline created by links*/
     </style>
 </head>
 <body>
     <div id="store_container">
         <a href="vocaloid_stickers.html" class="linked_containers" id="vocaloid_stickers">
-            <div id="vocaloid_image" class="image">
-
-            </div>
+            <image id="vocaloid_image" class="image" src="miku.jpg">
+            </image>
             <div id="vocaloids_desc" class="desc">
-
+                Vocaloids
             </div>
         </a>
         <a href="car_stickers.html" class="linked_containers" id="car_stickers">
-            <div id="car_image" class="image">
+            <image id="car_image" class="image" src="rx7_2.jpg">
 
-            </div>
+            </image>
             <div id="cars_desc" class="desc">
-                
+                Cars
             </div>
         </a>
         <a href="food_stickers.html" class="linked_containers" id="food_stickers">
-            <div id="food_image" class="image">
+            <image id="food_image" class="image" src="hamubrger.jpg">
 
-            </div>
+            </image>
             <div id="food_desc" class="desc">
-                
+                Food
             </div>
         </a>
         <a href="emoji_stickers.html" class="linked_containers" id="emoji_stickers">
-            <div id="emoji_image" class="image">
+            <image id="emoji_image" class="image" src="emoji.jpg">
 
-            </div>
+            </image>
             <div id="emoji_desc" class="desc">
-                
+                Emoji
             </div>
         </a>
         <a href="sanrio_stickers.html" class="linked_containers" id="sanrio_stickers">
-            <div id="sanrio_image" class="image">
+            <image src="hellokitty.jpg" id="sanrio_image" class="image">
 
-            </div>
+            </image>
             <div id="sanrio_desc" class="desc">
-                
+                Sanrio
             </div>
         <a href="meme_stickers.html" class="linked_containers" id="meme_stickers">
-            <div id="meme_image" class="image">
+            <image src="ishowspeed.jpg" id="meme_image" class="image">
 
-            </div>
+            </image>
             <div id="meme_desc" class="desc">
-                
+                Meme
             </div>
         </a>
-        <a href="#" class="linked_containers" id="sanrio_stickers">
-            <div id="sanrio_image" class="image">
+        <a href="y2k_stickers.html" class="linked_containers" id="y2k_stickers">
+            <image src="y2k.jpg" id="y2k_image" class="image">
 
-            </div>
-            <div id="sanrio_desc" class="desc">
-                
+            </image>
+            <div id="y2k_desc" class="desc">
+                Y2K
             </div>
         </a>
-        <a href="#" class="linked_containers" id="sanrio_stickers">
-            <div id="sanrio_image" class="image">
+        <a href="gaming_stickers.html" class="linked_containers" id="gaming_stickers">
+            <image src="minecraft.png" id="gaming_image" class="image">
 
-            </div>
-            <div id="sanrio_desc" class="desc">
-                
+            </image>
+            <div id="gaming_desc" class="desc">
+                Gaming
             </div>
         </a>
-        <a href="#" class="linked_containers" id="sanrio_stickers">
-            <div id="sanrio_image" class="image">
+        <a href="anime_stickers.html" class="linked_containers" id="anime_stickers">
+            <image src="anime.jpg" id="anime_image" class="image">
 
-            </div>
-            <div id="sanrio_desc" class="desc">
-                
+            </image>
+            <div id="anime_desc" class="desc">
+                Anime
             </div>
         </a>
-        <a href="#" class="linked_containers" id="sanrio_stickers">
-            <div id="sanrio_image" class="image">
+        <a href="holiday_stickers.html" class="linked_containers" id="holiday_stickers">
+            <image src="holiday.jpg" id="holiday_image" class="image">
 
-            </div>
-            <div id="sanrio_desc" class="desc">
-                
+            </image>
+            <div id="holiday_desc" class="desc">
+                Holiday
             </div>
         </a>
         </a>
