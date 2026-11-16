@@ -1,0 +1,86 @@
+body {
+            min-width: 100vw;
+            min-height: 100vh;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/825/815/706/hoonigan-ken-block-collage-artwork-sticker-bomb-hd-wallpaper-preview.jpg);
+            background-repeat: norepeat;                    /* Ensures img doesn't repeat as user scrolls */
+            background-position: center;                    /* Centers img */
+            background-size: cover;                         /* Scales img to cover screen */
+            background-attachment: fixed;                   /* Keeps the background fixed while user scrolls */
+            overflow: hidden;
+        }
+        .nav_offset {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: indigo;
+            font-family: sans-serif;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding: 1rem;
+        }
+        .home_button_navbar {
+            color: #ebebeb;
+            text-decoration: none;
+        }
+        .home_button_navbar {
+            margin-right: auto; 
+        }
+        #store_container {
+            background-color: rgba(255, 255, 255, 0.75);
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;                    /*Wraps the flexboxes to another row when one is filled. Must establish max and min growth as well as base properties*/
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 62.5rem;
+            height: 25rem;
+            padding: 2.5rem;
+            align-content: center;
+            row-gap: 2.5rem;
+            animation-name: fade_out_transition;
+        }
+        .linked_containers {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;                               /*Establishes Max Growth for all the boxes*/
+            flex-shrink: 0;                             /*Establishes Minimum Growth for all the boxes (which is zero so they don't auto shrink)*/
+            flex-basis: 11.25rem;                       /*Establihes Base values for all boxes*/
+            width: 7.5rem;
+            height: 11.25rem;
+            /*background-color: red; */
+            margin: 0;
+            align-items: center;
+        }
+        .image {
+            /*background-color: blue; */
+            width: 7.5rem;
+            height: 7.5rem;
+            overflow: hidden;
+        }
+        .desc {
+           /*background-color: green; */
+            width: 7.5rem;
+            height: 3.75rem;
+            display: flex;
+            font-size: 1.5rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: black;
+            align-items: center;
+            justify-content: center;
+        }
+        #miku {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            scale: 0.25;
+        }
+        a {
+            text-decoration: underline;
+            text-decoration-color: transparent;
+        } /*Removes the underline created by links*/
