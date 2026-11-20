@@ -4,112 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticker Printer</title>
-    <link rel="stylesheet" href="index.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        #index_container {
-            width: 100vw;
-            height: 100vh;
-        }
-        #menu_bar {
-            height: 10vh;
-            width: 100vw;
+        #main_container {
+            height: 20vh;
+            width: 50vw;
             position: absolute;
             top: 50%;
-            left: 0;
-            transform: translate(0, -50%);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #title_screen {
+            height: 20vh;
+            width: 50vw;
             background-color: rgba(214, 214, 214, 0.75);
-        }
-        #title_box {
-            height: 10vh;
-            width: 30vw;
+            font-family: fantasy;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: black;
             display: flex;
-            flex-basis: 30vw;
-            background-color: red;
             justify-content: center;
             align-items: center;
-            font-size: 3rem;
-            font-family: fantasy;
+            font-size: 5rem;
+
         }
-        #about_box {
-            height: 10vh;
-            width: 20vw;
-            display: flex;
-            flex-basis: 20vw;
-            background-color: green;
-            justify-content: center;
-            align-items: center;
-            font-size: 3rem;
-            font-family: fantasy;
-        }
-        #background_sticker1 {
-            position: absolute;
-            top: 70%;
-            left: 80%;
-            transform: rotate(25deg);
-        }
-        #background_sticker2 {
-            position: absolute;
-            top: 40%;
-            left: 5%;
-            transform: rotate(-15deg);
-            transform: scale(0.5);
-        }
-        #background_sticker3 {
-            position : absolute;
-            top: -5%;
-            left: -4%;
-            transform: scale(0.25);
-            z-index: 2;
-        }
-        #background_sticker4 {
-            position: absolute;
-            top: 2.5%;
-            left: -5%;
-            transform: scale(0.25);
-            z-index: 1;
-            rotate: 15deg;
-        }
+        a {
+            text-decoration: underline;
+            text-decoration-color: transparent;
+        } /*Removes the underline created by links*/
     </style>
 </head>
 <body>
-    <div id="index_container">
-        <image id="background_sticker1" class="background_stickers" src="y2k_one.png"></image>
-        <image id="background_sticker2" class="background_stickers" src="sanrio_one.jpg"></image>
-        <image id="background_sticker3" class="background_stickers" src="jdm_one.jpg"></image>
-        <image id="background_sticker4" class="background_stickers" src="jdm_two.png"></image>
-        <image id="background_sticker5" class="background_stickers" src=""></image>
-        <image id="background_sticker6" class="background_stickers" src=""></image>
-        <image id="background_sticker7" class="background_stickers" src=""></image>
-        <image id="background_sticker8" class="background_stickers" src=""></image>
-        <image id="background_sticker9" class="background_stickers" src=""></image>
-        <image id="background_sticker10" class="background_stickers" src=""></image>
-        <image id="background_sticker11" class="background_stickers" src=""></image>
-        <image id="background_sticker12" class="background_stickers" src=""></image>
-        <image id="background_sticker13" class="background_stickers" src=""></image>
-        <image id="background_sticker14" class="background_stickers" src=""></image>
-        <image id="background_sticker15" class="background_stickers" src=""></image>
-        <div id="menu_bar">
-            <div id="title_box">
+    <div id="main_container">
+        <a href="navbar.html">
+            <div id="title_screen">
                 Sticker Printer
             </div>
-            <div id="about_box">
-                About Us
-            </div>
-            <div id="store_box">
-                Our Store
-            </div>
-            <div id="printer_box">
-                Our Printer
-            </div>
-            <div id="help_box">
-                Help
-            </div>
-        </div>
+        </a>
     </div>
 </body>
 </html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Printer</title>
+    <style>
+        @keyframes title_appearance {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes items_disappearance {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes transformation {
+            0% {
+                height: 10vh;
+                widht: 100vw;
+            }
+            100% {
+                height: 20vh;
+                width: 50vw;
+            }
+        }
+        @keyframes disappearance {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        #main_container {
+            height: 20vh;
+            width: 50vw;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            opacity: 0;
+            transform: translate(0, -50%);
+            animation-name: title_appearance;
+            animation-delay: 2.5s;
+            animation-duration: 0.1s;
+            animation-fill-mode: forwards;
+            z-index: 2;
+        }
+        #title_screen {
+            height: 20vh;
+            width: 50vw;
+            font-family: fantasy;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+
+        }
+        a {
+            text-decoration: underline;
+            text-decoration-color: transparent;
+        } /*Removes the underline created by links*/
+        /* DIVIDER */
+                /* DIVIDER */
+                        /* DIVIDER */
+                                /* DIVIDER */
+                                        /* DIVIDER */
+                                                /* DIVIDER */
+        #menu_bar {
+            height: 10vh;
+            width: 100vw;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            background-color: rgba(214, 214, 214, 0.75);
+            display: flex;
+            flex-wrap: nowrap;
+            animation-name: transformation;
+            animation-delay: 0.5s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        .menu_box {
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-family: fantasy;
+            height: 10vh;
+            color: black;
+            animation-name: items_disappearance;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        .menu_box:hover {
+            font-size: 3rem;
+            background-color: rgba(214, 214, 214, 1);
+        }
+        .containers {
+            height: 10vh;
+            width: 20vw;
+            flex-basis: 20vw;
+        }
+        #container4 {
+            height: 10vh;
+            width: 10vw;
+            flex-basis: 10vw;
+        }
+        #title_box {
+            height: 10vh;
+            width: 30vw;
+            display: flex;
+            flex-basis: 30vw;
+            font-size: 3rem;
+            justify-content: center;
+            align-items: center;
+            font-family: fantasy;
+            animation-name: items_disappearance;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        #about_box {
+            width: 20vw;
+            display: flex;
+            flex-basis: 20vw;
+        }
+        #store_box {
+            width: 20vw;
+            display: flex;
+            flex-basis: 20vw;
+        }
+        #printer_box {
+            width: 20vw;
+            display: flex;
+            flex-basis: 20vw;
+        }
+        #back_box {
+            width: 10vw;
+            display: flex;
+            flex-basis: 10vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="main_container">
+        <a href="navbar.html">
+            <div id="title_screen">
+                Sticker Printer
+            </div>
+        </a>
+    </div>
+
+    
+
+
+
+    
+    <div id="menu_bar">
+            <div id="title_box">
+                Sticker Printer
+            </div>
+            <div id="container1" class="containers">
+                <a href="about.html">
+                    <div id="about_box" class="menu_box">
+                        About Us
+                    </div>
+                </a>
+            </div>
+            <div id="container2" class="containers">
+                <a href="store2.html">
+                    <div id="store_box" class="menu_box">
+                        Our Store
+                    </div>
+                </a>
+            </div>
+            <div id="container3" class="containers">
+                <a href="printer.html">
+                    <div id="printer_box" class="menu_box">
+                        Our Printer
+                    </div>
+                </a>
+            </div>
+            <div id="container4">
+                <a href="back_index.html">
+                    <div id="back_box" class="menu_box">
+                        Back
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
