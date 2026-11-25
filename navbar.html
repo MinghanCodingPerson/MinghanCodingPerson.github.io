@@ -5,7 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Page</title>
     <style>
+        @keyframes title_disappear {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes transformation {
+            0% {
+                width: 50vw;
+                height: 20vh;
+            }
+            100% {
+                width: 100vw;
+                height: 10vh;
+            }
+        }
+        @keyframes navbar_appear {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #title_screen {
+            width: 50vw;
+            height: 20vh;
+            background-color: rgba(214, 214, 214, 0.75);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            animation-name: transformation;
+            animation-delay: 0.25s;
+            animation-duration: 0.75s;
+            animation-fill-mode: forwards;
+        }
+        #words {
+            width: 50vw;
+            height: 20vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            font-family: fantasy;
+            color: black;
+            animation-name: title_disappear;
+            animation-duration: 0.25s;
+            animation-fill-mode: forwards;
+        }
+        #navigation_bar {
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            opacity: 0;
+            animation-name: navbar_appear;
+            animation-delay: 1s;
+            animation-duration: 0.25s;
+            animation-fill-mode: forwards;
+        }
+        #navbar_title {
+            width: 30vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 30vw;
+            justify-content: center;
+            align-items: center;
+            font-family: fantasy;
+            font-size: 3rem;
+            color: black;
+        }
+        #about_button {
+            width: 20vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 20vw;
+            justify-content: center;
+            align-items: center;
+        }
+        #about_words {
+            width: 20vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 20vw;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 2rem;
+            font-family: fantasy;
+        }
+        #about_words:hover {
+            font-size: 3rem;
+        }
+        #store_button {
+            width: 20vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 20vw;
+            justify-content: center;
+            align-items: center;
+        }
+        #store_words {
+            width: 20vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 20vw;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 2rem;
+            font-family: fantasy;
+        }
+        #store_words:hover {
+            font-size: 3rem;
+        }
+        #printer_button {
+            width: 20vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 20vw;
+            justify-content: center;
+            align-items: center;
+        }
+        #printer_words {
+            width: 20vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 20vw;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: black;
+            font-family: fantasy
+        }
+        #printer_words:hover {
+            font-size: 3rem;
+        }
+        #back_button {
+            width: 10vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 10vw;
+            justify-content: center;
+            align-items: center;
+        }
+        #back_words {
+            width: 10vw;
+            height: 10vh;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 10vw;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 2rem;
+            font-family: fantasy;
+        }
+        #back_words:hover {
+            font-size: 3rem;
+        }
+        a {
+            text-decoration: underline;
+            text-decoration-color: transparent;
+        }
 
+
+
+
+
+        #logo {
+            scale: 0.1;
+            position: absolute;
+            top: 60%;
+            left: 55%;
+        }
+        #sticker1 {
+            scale: 0.5;
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            transform: rotate(-25deg);
+        }
+        #sticker2 {
+            scale: 0.25;
+            position: absolute;
+            top: -10%;
+            left: 0;
+            z-index: 2;
+        }
+        #sticker3 {
+            scale: 0.5;
+            position: absolute;
+            top: 25%;
+            left: 0;
+            transform: rotate(15deg);
+            z-index: 1;
+        }
+        #sticker4 {
+            scale: 0.5;
+            position: absolute;
+            top: 10%;
+            left: 85%;
+            transform: rotate(10deg);
+        }
     </style>
 </head>
 <body>
@@ -13,6 +243,60 @@
         <div id="words">
             Sticker Printer
         </div>
+    </div>
+    <div id="navigation_bar">
+        <div id="navbar_title">
+            Sticker Printer
+        </div>
+        <div id="about_button">
+            <a href="about.html">
+                <div id="about_words">
+                    About Us
+                </div>
+            </a>
+        </div>
+        <div id="store_button">
+            <a href="store2.html">
+                <div id="store_words">
+                    Our Store
+                </div>
+            </a>
+        </div>
+        <div id="printer_button">
+            <a href="printer.html">
+                <div id="printer_words">
+                    Our Printer
+                </div>
+            </a>
+        </div>
+        <div id="back_button">
+            <a href="back_index.html">
+                <div id="back_words">
+                    Back
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="logo">
+        <image src="logo.png"></image>
+    </div>
+    <div id="sticker1">
+        <image src="sanrio_one.jpg"></image>
+    </div>
+    <div id="sticker2">
+        <image src="jdm_one.jpg"></image>
+    </div>
+    <div id="sticker3">
+        <image src="jdm_two.png"></image>
+    </div>
+    <div id="sticker4">
+        <image src="y2k_one.png"></image>
     </div>
 </body>
 </html>
